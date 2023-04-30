@@ -11,81 +11,126 @@
 "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <!-- Internal css -->
 <style>
-    h1{
+    h2{
     text-align: center;
     padding: 30px;
     font-weight:bold;
+    padding-bottom: 20px;
+}
+footer,p{
+    text-align: center;
+    font-size: 25px; 
 }
 .form-body{
     border: 2px;
-    margin: auto;
-    width: 60%;
-    height: 500px;
-    background-color:rgb(134, 138, 136);
+    margin: 100px;
+    width: 70%;
+    height: 400px;
+    background-color:hsl(147, 38%, 78%);
     padding: 100px;
-    text-size-adjust: 50px;
+    text-align: center;
+
+
 }
 
    
 input{
-    width: 30%;
-    padding: 12px 20px;
-    margin: 8px 0;
-    border: 1px solid;
+    width: 60%;
+    padding: 12px 24px;
+    margin: 8px 16px;
+    border: 2px solid;
+    
     
 }
-.form-Address{
-    box-sizing: initial;
-}
+
 .btn{
     width: 250px;
     border: 1px;
     font-size: 70px;
-    padding top: 100px;
-    margin: 8px ;
+    padding: 100px;
+    margin: 20px ;
     color:green;
+    
 }
 
 
 .form-body.form-iput.select box{
-    position:relative;
-    width: 50%;
-    height: 40px;
-    border: 1px solid;}
+    position:center;
+    width: 60%;
+    height: 50px;
+    border: 1px solid;
+    padding-left: 100px;
+   margin-top:50px ;
+}
+.social{
 
+    padding: 50px;
+    font-size: 30px;
+    width: 150px;
+    text-align: center;
+    text-decoration: none;
+    margin top: 10px;
+                                                                                           
+
+    
+}
+
+    .fa-facebook {
+    background: blue;
+    color:white;
+    ;
+  }
+   /* Linked-in */
+   .fa-linkedin {
+    background: #007bb5;
+    color: white ;
+  }
+  
+  /* Twitter */
+  .fa-twitter {
+    background: rgb(63, 63, 136);
+    color:white;
+  }
+  /* Instagram */
+  .fa-instagram{
+    background:  #125688;
+    color: white;}
  footer {
   
   margin-top: 200px;
   text-align: center;
-  color: white;
+  color: black;
 }
 </style>
 
 <body>
-    <h1 class = "form title">Contact Form</h1>
+    <a class="navbar-brand" href="#"><img src="mylogo.png" alt="logo"></a>
+    <h2 class = "form">Contact me through my social media handles in just a click on the social media icon!</h2>
+    <!-- social madia icons -->
+    <div class="social">
+        
+        <a href="https://web.facebook.com/aisosamargaret.odiase" class="fa fa-facebook"></a>
+        <a href="www.linkedin.com/in/oyakhireaisosamargaret" class="fa fa-linkedin"></a>
+        <a href="https://twitter.com/Aisomegoyak" class="fa fa-twitter"></a>
+        <a href="www.instagram.com/oyakhireaisosamargaret/?hl=" class="fa fa-instagram"></a>
+    </div>
     <!-- form body -->
 <div class="form-body">
-    <p>Got a question? I would love to hear from you, send me a message and i would respond as soon as possible</p>
+    <p><em>Got a question? I would love to hear from you, send me a message and i would respond as soon as possible</em></p>
     
-    <!-- Firstname and Lastname -->
-    <div class="horizontal-group">
+    <!-- Name-->
+
        
-        <div class="form-group left">
-            <label for="Name" class="label-title">Name</label>
-            <select prefix="title">
-                <option value="Miss">Miss</option>
-                <option value="Mrs">Mrs</option>
-                <option value="Mr">Mr</option>
-              </select>
+        <div class="form-group">
+            
           
-            <label for="firstname" class="label-title">First name </label>
-            <input type="text" id="firstname" class="form-input" placeholder="Enter your first name" required="required" />
+            <label for="name" class="label-title">Name </label>
+            <input type="text" id="Name" class="form-input" placeholder="Enter your Name" required="required" />
         
-            <label for="lastname" class="label-title">Last name</label>
-            <input type="text" id="lastname" class="form-input" placeholder="Enter your last name" />
+            
         </div>
        
-</div>
+
 <div class="form-details">
         <label for "email">Email</label>
         <input type "text" id "email" placeholder="somebody@email.com" required>
@@ -94,16 +139,17 @@ input{
        </select>
 
        <div class="form-Message"> 
-        <label for "message">Message</label><i class="fas fa-map-marker-alt"></i>
+        <label for "message" style="padding:20px;">Message</label><i class="fas fa-map-marker-alt"></i>
         <input type "" type="text">
        
 
     </div>
+    
 <div class="btn">
 <button type="submit" class "btn" style="background-color: green;">Submit</button>
 <button class "btn" Onclick='location.href="myPortfolio.html"'>Home</button>
 </div>
-
+</div>
     <footer>
         
             <p>&copy;Copyright 2023|TIIDELAB</p>
