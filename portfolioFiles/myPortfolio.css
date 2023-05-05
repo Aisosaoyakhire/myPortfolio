@@ -8,6 +8,7 @@
 body{
   background: black;
   color: #fff; 
+  position: relative;
 
 }
 #header{
@@ -16,6 +17,7 @@ body{
   background-image: url(images/myportfoliopicpng.png);
   background-size: cover;
   background-position: center;
+  
 }
 .Navigation{
     width: 100%;
@@ -103,7 +105,7 @@ p{
   flex-direction: column;
   gap:10px;}
 
-.image-item img{
+.image-item images{
 width: 100%;
 border-radius:5px;
 height:100%;
@@ -114,6 +116,7 @@ object-fit: cover;
   color: #ababab;
   align-items: center;
 }
+
 /* flex image gallery */
 .image-gallery{
   display: flex;
@@ -131,7 +134,6 @@ object-fit: cover;
   .left-image, .center-image, .right-image{
     flex: 100%
   }
-}
 .left-image{
   padding: 10px;
   flex-basis:30%;
