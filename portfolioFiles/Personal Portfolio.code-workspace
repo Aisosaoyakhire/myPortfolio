@@ -1,0 +1,16 @@
+{
+  "folders": [
+	{
+		"path": ".."
+	},
+	{
+		"path": "../../TIIDEtrack"
+	},
+	{
+		"path": "../../OyakhireAisosaMargaret"
+	}
+],
+  "settings": {
+    "liveServer.settings.multiRootWorkspaceName": "Personal Portfolio"
+  }
+}

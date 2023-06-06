@@ -6,9 +6,10 @@
     box-sizing: border-box;
 }
 body{
-  background: black;
+  background: white;
   color: #fff; 
   position: relative;
+  height: auto;
 
 }
 #header{
@@ -66,7 +67,11 @@ button:hover{
   background: transparent;
   color:goldenrod;
 }
-
+hr{
+  height:3px;
+  background-color:goldenrod ;
+  border-color: goldenrod;
+}
 .hero{
   margin-left: 8%;
   margin-top: 5%;
@@ -81,7 +86,7 @@ button:hover{
 }
 .hero p
 {
-  color:white;
+  color:black;
 line-height: 22px;
 margin-top:10px;
 margin-bottom: 30px;
@@ -91,44 +96,97 @@ background-color:transparent;
 }
 h2{
   text-align: center;
-  color: #fff;
+  color:black;
+  font-size: 30px;
+  font-family: Impact;}
+h3{
+  text-align: center;
+  color:black;
+  font-size: 20px;
+  font-family: poppins;}
 
+.contactMe
+{
+margin-bottom: -100px;
 }
+
 p{
   text-align: center;
   color: #fff;
   background-color:green;
   font-size: larger;
 }
-.image-gallery{
-  display: flex;
-  flex-direction: column;
-  gap:10px;}
+.form-body{
+  border: 2px;
+  margin: 100px;
+  width: 70%;
+  height: 400px;
+  background-color:hsl(147, 38%, 78%);
+  padding: 150px;
+  padding-top: 200px;
+  text-align: center;
 
-.image-item images{
-width: 100%;
-border-radius:5px;
-height:100%;
-object-fit: cover;
+
 }
-#about{
-  padding:  80px 0;
+
+ 
+input{
+  width: 60%;
+  padding: 12px 24px;
+  margin: 8px 16px;
+  border: 2px solid;
+  
+  
+}
+
+.btn{
+  width: 250px;
+  border: 1px;
+  font-size: 70px;
+  padding: 100px;
+  margin: 20px ;
+  color:green;
+  
+}
+
+
+.form-body.form-iput.select box{
+  position:center;
+  width: 60%;
+  height: 50px;
+  border: 1px solid;
+  padding-left: 100px;
+ margin-top:50px ;
+}
+
+#about
+{
+ padding-bottom: 20px;
+ padding-top: 20px;
   color: #ababab;
   align-items: center;
 }
+#about img
+{
+  padding-left: 650px;
+}
+section-2 section-3
+{
+  background-image: url(images/bckg.webp);
+}
 
 /* flex image gallery */
-.image-gallery{
+.container{
   display: flex;
   image-size: 30%;
   image-align: center;
-  flex-direction:column ;
-  flex:wrap;  
+  flex-direction:row-reverse ;
+  border: 1px solid #c3c3c3 
   
 }
-/* for responsive layout */
+for responsive layout
 @media only screen and (min-width:600px){
-  .image-gallery{
+  .container{
     flex-direction: row;
   }
   .left-image, .center-image, .right-image{
@@ -239,6 +297,9 @@ input{
   .fa-instagram{
     background:  transparent;
     color: #125688;
+  }
+  footer{
+    background-color: green;
   }
  
 
